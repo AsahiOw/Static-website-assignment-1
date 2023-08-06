@@ -110,8 +110,9 @@ body{
 /* backpart */
 .footer{
     height: 100px;
+    width: 100%;
     margin: auto;
-    display:grid;
+    display: grid;
     position: static;
     margin-top: 10px;
     background-color: #65451F;
@@ -161,16 +162,15 @@ body{
     color: #EAC696;
 }
 
-.product p {
+/* .product p {
 	font-size: 3vmin;
 	line-height: 1.5;
 	margin-bottom: 20px;
     color: #EAC696;
-}
+} */
 
 button {
 	background-color: #65451F;
-	border: none;
 	color: #EAC696;
 	padding: 10px;
 	text-align: center;
@@ -233,7 +233,6 @@ a:hover{
 #detail img{
     width: 100%;
 }
-
 .table_container {
     display: grid;
     place-items: center;
@@ -244,6 +243,18 @@ a:hover{
 }
 .small_img img{
     width: 100%;
+}
+.descriptions{
+    margin: auto;
+    width: 80%;
+}
+.descriptions h1{
+    font-size: 7vmin;
+    color: #EAC696;
+}
+.descriptions p {
+    font-size: 4vmin;
+    color: #EAC696;
 }
 /* Change display table for mobile */
 @media (max-width: 768px) {
@@ -261,4 +272,70 @@ a:hover{
 .text-only{
     color: #EAC696;
     padding: 10%;
+}
+.text-only p, 
+.text-only h1,
+.text-only h2,
+.text-only h3,
+.text-only a{
+    font-size: 100%;
+}
+/* text for cart page */
+.Purchased{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: #EAC696;
+    border-style: solid;
+}
+#last_page{
+    min-height: 100vh;
+}
+#last_page_footer{
+    position: absolute;
+    bottom: 0;
+}
+/* contact us form */
+.contact{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+label{
+    font-size: clamp(20px, 2vw, 100000px);
+    color: #EAC696;
+}
+select, input{
+    font-size: clamp(10px, 2vw, 100000px);
+}
+input.square_checkbox{
+    width: clamp(20px, 2vw, 100000px);
+    height: clamp(20px, 2vw, 100000px);
+}
+input.circle_checkbox{
+    width: clamp(20px, 2vw, 100000px);
+    height: clamp(20px, 2vw, 100000px);
+}
+legend{
+    font-size: clamp(20px, 1vw, 1000px);
+    color: #EAC696;
+}
+.contact h1{
+    text-align: center;
+    font-size: clamp(20px, 2vw, 100000px);
+    color: #EAC696;
+}
+textarea{
+    width: clamp(140px, 80%, 100000px);
+}
+/* mobile size for form */
+@media (max-width: 768px) {
+    label, input, select, textarea {
+      display: block;
+    }
 }
