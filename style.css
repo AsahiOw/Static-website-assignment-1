@@ -21,6 +21,7 @@ body{
     display: block;
     background-color: #765827;
     font-family: 'Abhaya Libre', serif;
+    overflow-y: hidden;
 }
 /* navigation part */
 .header{
