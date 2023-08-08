@@ -287,11 +287,19 @@ a:hover{
         display: flex;
     }
     .detail_bar a, p{
-        font-size: 30px;
+        font-size: 15px;
+    }
+    .detail_bar{
+        margin-right: auto;
+        margin-left: auto;
     }
     .small_img img{
         width: 100px;
         height: 100px;
+    }
+    table{
+        padding-right: 50%;
+        padding-left: 50%;
     }
 }
 /*text for footer pages*/
