@@ -217,7 +217,7 @@ a:hover{
 
 }
 /* footer special resize */
-@media (max-width: 360px){
+@media (max-width: 432px){
     .end_bar a{
         font-size: 10px;
     }
