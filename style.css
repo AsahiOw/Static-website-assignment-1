@@ -317,9 +317,6 @@ a:hover{
     color: #EAC696;
     border-style: solid;
 }
-#last_page{
-    min-height: 100vh;
-}
 #last_page_footer{
     position: absolute;
     bottom: 0;
@@ -389,8 +386,5 @@ textarea{
 @media (max-width: 768px){
     .Purchased h1{
         font-size: 20px;
-    }
-    #last_page{
-        min-height: 120vh;
     }
 }
