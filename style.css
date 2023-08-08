@@ -214,8 +214,14 @@ a:hover{
 		width: 100%;
 		margin-bottom: 40px;
 	}
-}
 
+}
+/* footer special resize */
+@media (max-width: 360px){
+    .end_bar a{
+        font-size: 10px;
+    }
+}
 /* Responsive 2-columns Layout */
 @media (min-width: 768px) and (max-width: 992px) {
     .product {
