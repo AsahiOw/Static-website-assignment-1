@@ -145,7 +145,8 @@ body{
 .end_bar a {
     color: #EAC696;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* category part */
@@ -214,6 +215,7 @@ a:hover{
 		margin-bottom: 40px;
 	}
 }
+
 /* Responsive 2-columns Layout */
 @media (min-width: 768px) and (max-width: 992px) {
     .product {
@@ -270,7 +272,7 @@ a:hover{
     font-size: 4vmin;
     color: #EAC696;
 }
-/* Change display table for mobile */
+/* Change display table for mobile detail pages */
 @media (max-width: 768px) {
     .table_container td{
         display: table-row;
@@ -280,6 +282,10 @@ a:hover{
     }
     .detail_bar a, p{
         font-size: 30px;
+    }
+    .small_img img{
+        width: 100px;
+        height: 100px;
     }
 }
 /*text for footer pages*/
