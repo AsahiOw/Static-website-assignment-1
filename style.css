@@ -250,21 +250,32 @@ a:hover{
 #detail h1{
     color: #EAC696;
 }
+/* this part is a little messy since I changed it from table implementation to div */
 .table_container img{
-    width: 300px;
-    height: 450px;
+    width: 400px;
+    height: 600px;
 }
 .table_container {
-    display: grid;
-    place-items: center;
-    height: 100%;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 80%;
 }
-.table_container table{
-    width: 60%;
+
+.inside_td:nth-child(1){
+    margin: auto;
+    position: relative;
+}
+.inside_td{
+    width: 33.33%;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .small_img img{
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
 }
 .descriptions{
     margin: auto;
@@ -278,11 +289,25 @@ a:hover{
     font-size: 4vmin;
     color: #EAC696;
 }
+/* fix display detail page (aka very bad implementation but i digress)*/
+@media (max-width: 1372px){
+    .table_container{
+        width: 100%;
+        margin:0;
+    }
+}
+@media (max-width: 1000px){
+    .table_container img{
+        width: 300px;
+        height: 450px;
+    }
+    .small_img img{
+        width: 145px;
+        height: 145px;
+    }
+}
 /* Change display table for mobile detail pages */
 @media (max-width: 768px) {
-    .table_container td{
-        display: table-row;
-    }
     .small_img_container{
         display: flex;
     }
@@ -296,6 +321,14 @@ a:hover{
     .small_img img{
         width: 100px;
         height: 100px;
+    }
+    .table_container{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .inside_td{
+        width: 100%;
     }
 }
 /*text for footer pages*/
