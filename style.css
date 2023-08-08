@@ -353,9 +353,17 @@ legend{
 textarea{
     width: clamp(140px, 80%, 100000px);
 }
-/* mobile size for form */
+#about_us_footer{
+    position: absolute;
+    bottom: 0;
+}
+
+/* mobile size for form and about us*/
 @media (max-width: 768px) {
     label, input, select, textarea {
       display: block;
+    }
+    #about_us_footer{
+        position: relative;
     }
 }
