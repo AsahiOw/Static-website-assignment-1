@@ -358,11 +358,14 @@ textarea{
     bottom: 0;
 }
 
-/* mobile size for form and about us*/
+/* mobile size for form*/
 @media (max-width: 768px) {
     label, input, select, textarea {
       display: block;
     }
+}
+/* about us footer */
+@media (max-width: 768px) and (max-height: 650px){
     #about_us_footer{
         position: relative;
     }
