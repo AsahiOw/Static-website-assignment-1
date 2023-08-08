@@ -385,3 +385,9 @@ textarea{
         position: relative;
     }
 }
+/* submit page text resize */
+@media (max-width: 768px){
+    .Purchased h1{
+        font-size: 25px;
+    }
+}
