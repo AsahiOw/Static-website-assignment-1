@@ -152,8 +152,8 @@ body{
 }
 
 .product img {
-	width: 100%;
-	height: auto;
+	width: 300px;
+    height: 450px;
 }
 
 .product h2 {
@@ -161,13 +161,6 @@ body{
 	margin: 20px 0 10px;
     color: #EAC696;
 }
-
-/* .product p {
-	font-size: 3vmin;
-	line-height: 1.5;
-	margin-bottom: 20px;
-    color: #EAC696;
-} */
 
 button {
 	background-color: #65451F;
@@ -202,10 +195,8 @@ a:hover{
 		width: 100%;
 		margin-bottom: 40px;
 	}
-    .product img{
-        width: 70%;
-    }
 }
+/* Responsive 2-columns Layout */
 @media (min-width: 768px) and (max-width: 992px) {
     .product {
         width: 50%;
@@ -230,8 +221,12 @@ a:hover{
     height: 100%;
     width: 33.33%;
 }
-#detail img{
-    width: 100%;
+#detail h1{
+    color: #EAC696;
+}
+.table_container img{
+    width: 300px;
+    height: 450px;
 }
 .table_container {
     display: grid;
@@ -239,10 +234,11 @@ a:hover{
     height: 100%;
 }
 .table_container table{
-    width: 90%;
+    width: 60%;
 }
 .small_img img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
 }
 .descriptions{
     margin: auto;
