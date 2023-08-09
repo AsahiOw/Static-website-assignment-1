@@ -153,7 +153,8 @@ body{
 .title{
     text-align: center;
 }
-.title a{
+.title a,
+.title p{
     color: #EAC696;
     text-decoration: none;
     font-size: 8vmin;
@@ -424,4 +425,13 @@ textarea{
     .Purchased h1{
         font-size: 20px;
     }
+}
+/* video  */
+.video{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 420px;
+    height: 315px;
 }
