@@ -203,6 +203,10 @@ button {
 a:hover{
     opacity: 50%;
 }
+/* hover product rotate */
+.product img:hover{
+    transform: rotate(5deg);
+}
 
 /* Responsive 1-column Layout */
 @media only screen and (max-width: 768px) {
