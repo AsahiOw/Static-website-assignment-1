@@ -329,6 +329,7 @@ a:hover{
     }
     .table_container{
         flex-direction: column;
+        display: flex;
         width: 80%;
         margin: auto;
     }
