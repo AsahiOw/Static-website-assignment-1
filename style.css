@@ -219,7 +219,10 @@ a:hover{
 		width: 100%;
 		margin-bottom: 40px;
 	}
-
+    .product img {
+        width: 200px;
+        height: 300px;
+    }
 }
 /* footer special resize */
 @media (max-width: 432px){
@@ -337,6 +340,17 @@ a:hover{
         width: 100%;
     }
 }
+/* special resize for galaxy fold */
+@media (max-width: 370px){
+    .table_container img{
+        width: 200px;
+        height: 300px;
+    }
+    .small_img img{
+        width: calc(200px/3);
+        height: calc(200px/3);
+    }
+}
 /*text for footer pages*/
 .text-only{
     color: #EAC696;
@@ -404,8 +418,17 @@ textarea{
     position: absolute;
     bottom: 0;
 }
+.contact-checkbox{
+    display: flex;
+}
 /* mobile size for form*/
 @media (max-width: 768px) {
+    .contact-checkbox{
+        flex-direction: column;
+    }
+    .sub-contact-checkbox{
+        display: flex;
+    }
     label, input, select, textarea {
       display: block;
     }
@@ -428,6 +451,6 @@ textarea{
     justify-content: center;
 }
 iframe{
-    width: 420px;
-    height: 315px;
+    aspect-ratio: 16/9;
+    width: 60%;
 }
