@@ -423,6 +423,9 @@ textarea{
 }
 /* mobile size for form*/
 @media (max-width: 768px) {
+    .contact{
+        width: 60%;
+    }
     .contact-checkbox{
         flex-direction: column;
     }
